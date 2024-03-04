@@ -57,63 +57,43 @@
             panel1.BackColor = Color.FromArgb(33, 65, 77);
             panel1.Controls.Add(panel2);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(0, 0);
+            resources.ApplyResources(panel1, "panel1");
             panel1.Name = "panel1";
-            panel1.Size = new Size(1143, 193);
-            panel1.TabIndex = 2;
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(65, 86, 103);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(201, 12);
+            resources.ApplyResources(panel2, "panel2");
             panel2.Name = "panel2";
-            panel2.Size = new Size(930, 166);
-            panel2.TabIndex = 2;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Cascadia Mono", 51.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            resources.ApplyResources(label1, "label1");
             label1.ForeColor = Color.FromArgb(0, 149, 135);
-            label1.Location = new Point(176, 31);
             label1.Name = "label1";
-            label1.Size = new Size(559, 91);
-            label1.TabIndex = 2;
-            label1.Text = "POCKET GOLEMS";
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.logo;
-            pictureBox1.Location = new Point(12, 12);
+            resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(174, 166);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // button1
             // 
             button1.FlatAppearance.BorderColor = Color.White;
             button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
+            resources.ApplyResources(button1, "button1");
             button1.Image = Properties.Resources.golems___copia;
-            button1.Location = new Point(524, 696);
-            button1.Margin = new Padding(0);
             button1.Name = "button1";
-            button1.Size = new Size(111, 57);
-            button1.TabIndex = 3;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(156, 210);
+            resources.ApplyResources(pictureBox2, "pictureBox2");
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(846, 472);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 4;
             pictureBox2.TabStop = false;
             // 
             // menu_lucha
@@ -127,48 +107,30 @@
             menu_lucha.Controls.Add(button4);
             menu_lucha.Controls.Add(pictureBox6);
             menu_lucha.Controls.Add(button3);
-            menu_lucha.Location = new Point(0, 560);
+            resources.ApplyResources(menu_lucha, "menu_lucha");
             menu_lucha.Name = "menu_lucha";
-            menu_lucha.Size = new Size(1143, 193);
-            menu_lucha.TabIndex = 24;
-            menu_lucha.Visible = false;
             // 
             // button8
             // 
             button8.BackColor = Color.FromArgb(158, 158, 158);
-            button8.FlatStyle = FlatStyle.Popup;
-            button8.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button8.Location = new Point(930, 57);
+            resources.ApplyResources(button8, "button8");
             button8.Name = "button8";
-            button8.Size = new Size(185, 86);
-            button8.TabIndex = 11;
-            button8.Text = "A LUCHAR!";
             button8.UseVisualStyleBackColor = false;
             button8.Click += button8_Click;
             // 
             // button6
             // 
             button6.BackColor = Color.FromArgb(255, 152, 0);
-            button6.FlatStyle = FlatStyle.Popup;
-            button6.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.Location = new Point(723, 103);
+            resources.ApplyResources(button6, "button6");
             button6.Name = "button6";
-            button6.Size = new Size(178, 49);
-            button6.TabIndex = 9;
-            button6.Text = "REGLAS";
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
             // button5
             // 
             button5.BackColor = Color.FromArgb(158, 158, 158);
-            button5.FlatStyle = FlatStyle.Popup;
-            button5.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.Location = new Point(723, 48);
+            resources.ApplyResources(button5, "button5");
             button5.Name = "button5";
-            button5.Size = new Size(178, 49);
-            button5.TabIndex = 8;
-            button5.Text = "GOLEMS";
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
@@ -176,50 +138,31 @@
             // 
             textBox5.BackColor = Color.FromArgb(57, 92, 106);
             textBox5.BorderStyle = BorderStyle.None;
-            textBox5.Font = new Font("Arial Black", 30F, FontStyle.Bold);
-            textBox5.Location = new Point(200, 57);
+            resources.ApplyResources(textBox5, "textBox5");
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(216, 57);
-            textBox5.TabIndex = 7;
-            textBox5.Text = "USUARIO";
-            textBox5.TextAlign = HorizontalAlignment.Center;
             // 
             // button4
             // 
-            button4.AutoSize = true;
+            resources.ApplyResources(button4, "button4");
             button4.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0, 0);
             button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Arial Black", 12F, FontStyle.Bold);
             button4.ForeColor = Color.Black;
-            button4.Location = new Point(35, 149);
             button4.Name = "button4";
-            button4.Size = new Size(176, 35);
-            button4.TabIndex = 6;
-            button4.Text = "Modificar imagen";
             button4.UseVisualStyleBackColor = true;
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(55, 21);
+            resources.ApplyResources(pictureBox6, "pictureBox6");
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(130, 122);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 5;
             pictureBox6.TabStop = false;
             // 
             // button3
             // 
             button3.FlatAppearance.BorderColor = Color.White;
             button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
+            resources.ApplyResources(button3, "button3");
             button3.Image = Properties.Resources.golems___copia;
-            button3.Location = new Point(516, 696);
-            button3.Margin = new Padding(0);
             button3.Name = "button3";
-            button3.Size = new Size(111, 57);
-            button3.TabIndex = 4;
             button3.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -227,31 +170,23 @@
             button2.BackColor = Color.White;
             button2.FlatAppearance.BorderColor = Color.White;
             button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
+            resources.ApplyResources(button2, "button2");
             button2.Image = Properties.Resources.golems___copia;
-            button2.Location = new Point(524, 506);
-            button2.Margin = new Padding(0);
             button2.Name = "button2";
-            button2.Size = new Size(111, 57);
-            button2.TabIndex = 25;
             button2.UseVisualStyleBackColor = false;
-            button2.Visible = false;
             button2.Click += button2_Click;
             // 
             // Reglas
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(82, 120, 137);
-            ClientSize = new Size(1143, 750);
             Controls.Add(button1);
             Controls.Add(panel1);
             Controls.Add(menu_lucha);
             Controls.Add(button2);
             Controls.Add(pictureBox2);
             Name = "Reglas";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Reglas";
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
