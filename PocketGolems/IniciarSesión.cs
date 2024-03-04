@@ -26,5 +26,16 @@ namespace PocketGolems
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            Lucha anar = new Lucha();
+
+            anar.Show();
+
+            this.Hide();
+
+        }
     }
 }

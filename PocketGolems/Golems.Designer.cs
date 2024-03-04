@@ -45,6 +45,15 @@ namespace PocketGolems
             pictureBox2 = new PictureBox();
             label5 = new Label();
             pictureBox5 = new PictureBox();
+            menu_lucha = new Panel();
+            button8 = new Button();
+            button6 = new Button();
+            button5 = new Button();
+            textBox5 = new TextBox();
+            button4 = new Button();
+            pictureBox7 = new PictureBox();
+            button3 = new Button();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
@@ -53,6 +62,8 @@ namespace PocketGolems
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            menu_lucha.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -214,16 +225,133 @@ namespace PocketGolems
             pictureBox5.TabStop = false;
             pictureBox5.Click += pictureBox5_Click;
             // 
+            // menu_lucha
+            // 
+            menu_lucha.BackColor = Color.FromArgb(57, 92, 106);
+            menu_lucha.BorderStyle = BorderStyle.FixedSingle;
+            menu_lucha.Controls.Add(button8);
+            menu_lucha.Controls.Add(button6);
+            menu_lucha.Controls.Add(button5);
+            menu_lucha.Controls.Add(textBox5);
+            menu_lucha.Controls.Add(button4);
+            menu_lucha.Controls.Add(pictureBox7);
+            menu_lucha.Controls.Add(button3);
+            menu_lucha.Location = new Point(0, 560);
+            menu_lucha.Name = "menu_lucha";
+            menu_lucha.Size = new Size(1143, 193);
+            menu_lucha.TabIndex = 25;
+            menu_lucha.Visible = false;
+            // 
+            // button8
+            // 
+            button8.BackColor = Color.FromArgb(158, 158, 158);
+            button8.FlatStyle = FlatStyle.Popup;
+            button8.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button8.Location = new Point(930, 57);
+            button8.Name = "button8";
+            button8.Size = new Size(185, 86);
+            button8.TabIndex = 11;
+            button8.Text = "A LUCHAR!";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(158, 158, 158);
+            button6.FlatStyle = FlatStyle.Popup;
+            button6.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button6.Location = new Point(723, 103);
+            button6.Name = "button6";
+            button6.Size = new Size(178, 49);
+            button6.TabIndex = 9;
+            button6.Text = "REGLAS";
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
+            // 
+            // button5
+            // 
+            button5.BackColor = Color.FromArgb(255, 152, 0);
+            button5.FlatStyle = FlatStyle.Popup;
+            button5.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button5.Location = new Point(723, 48);
+            button5.Name = "button5";
+            button5.Size = new Size(178, 49);
+            button5.TabIndex = 8;
+            button5.Text = "GOLEMS";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
+            // 
+            // textBox5
+            // 
+            textBox5.BackColor = Color.FromArgb(57, 92, 106);
+            textBox5.BorderStyle = BorderStyle.None;
+            textBox5.Font = new Font("Arial Black", 30F, FontStyle.Bold);
+            textBox5.Location = new Point(200, 57);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(216, 57);
+            textBox5.TabIndex = 7;
+            textBox5.Text = "USUARIO";
+            textBox5.TextAlign = HorizontalAlignment.Center;
+            // 
+            // button4
+            // 
+            button4.AutoSize = true;
+            button4.FlatAppearance.BorderColor = Color.FromArgb(0, 0, 0, 0);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Arial Black", 12F, FontStyle.Bold);
+            button4.ForeColor = Color.Black;
+            button4.Location = new Point(35, 149);
+            button4.Name = "button4";
+            button4.Size = new Size(176, 35);
+            button4.TabIndex = 6;
+            button4.Text = "Modificar imagen";
+            button4.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(55, 21);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(130, 122);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 5;
+            pictureBox7.TabStop = false;
+            // 
+            // button3
+            // 
+            button3.FlatAppearance.BorderColor = Color.White;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Image = Properties.Resources.golems___copia;
+            button3.Location = new Point(516, 696);
+            button3.Margin = new Padding(0);
+            button3.Name = "button3";
+            button3.Size = new Size(111, 57);
+            button3.TabIndex = 4;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.FlatAppearance.BorderColor = Color.White;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Image = Properties.Resources.golems___copia;
+            button2.Location = new Point(524, 506);
+            button2.Margin = new Padding(0);
+            button2.Name = "button2";
+            button2.Size = new Size(111, 57);
+            button2.TabIndex = 26;
+            button2.UseVisualStyleBackColor = true;
+            button2.Visible = false;
+            button2.Click += button2_Click;
+            // 
             // Golems
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(82, 120, 137);
             ClientSize = new Size(1143, 750);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(pictureBox4);
@@ -232,8 +360,15 @@ namespace PocketGolems
             Controls.Add(pictureBox2);
             Controls.Add(button1);
             Controls.Add(panel1);
+            Controls.Add(menu_lucha);
+            Controls.Add(pictureBox5);
+            Controls.Add(pictureBox6);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(button2);
             Margin = new Padding(4, 5, 4, 5);
             Name = "Golems";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -245,6 +380,9 @@ namespace PocketGolems
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            menu_lucha.ResumeLayout(false);
+            menu_lucha.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -266,7 +404,11 @@ namespace PocketGolems
 
         private void button1_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+
+            menu_lucha.Visible = true;
+            button1.Visible = false;
+            button2.Visible = true;
+
         }
 
         #endregion
@@ -286,5 +428,14 @@ namespace PocketGolems
         private PictureBox pictureBox2;
         private Label label5;
         private PictureBox pictureBox5;
+        private Panel menu_lucha;
+        private Button button8;
+        private Button button6;
+        private Button button5;
+        private TextBox textBox5;
+        private Button button4;
+        private PictureBox pictureBox7;
+        private Button button3;
+        private Button button2;
     }
 }

@@ -35,18 +35,19 @@ namespace PocketGolems
             label1 = new Label();
             pictureBox1 = new PictureBox();
             panel3 = new Panel();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label5 = new Label();
             textBox3 = new TextBox();
             label6 = new Label();
+            textBox2 = new TextBox();
+            label5 = new Label();
+            textBox1 = new TextBox();
+            label4 = new Label();
+            label2 = new Label();
+            label3 = new Label();
             textBox4 = new TextBox();
             label7 = new Label();
             textBox5 = new TextBox();
             label8 = new Label();
+            button2 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -122,45 +123,25 @@ namespace PocketGolems
             panel3.Size = new Size(580, 560);
             panel3.TabIndex = 6;
             // 
-            // label2
+            // textBox3
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Nirmala UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(12, 15);
-            label2.Name = "label2";
-            label2.Size = new Size(279, 65);
-            label2.TabIndex = 0;
-            label2.Text = "Registrarse";
+            textBox3.BorderStyle = BorderStyle.FixedSingle;
+            textBox3.Location = new Point(180, 401);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(220, 31);
+            textBox3.TabIndex = 6;
+            textBox3.Text = "Introduzca su email";
+            textBox3.TextAlign = HorizontalAlignment.Center;
             // 
-            // label3
+            // label6
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Nirmala UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(592, 208);
-            label3.Name = "label3";
-            label3.Size = new Size(327, 65);
-            label3.TabIndex = 1;
-            label3.Text = "Iniciar Sesión";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(234, 138);
-            label4.Name = "label4";
-            label4.Size = new Size(112, 32);
-            label4.TabIndex = 1;
-            label4.Text = "Usuario";
-            // 
-            // textBox1
-            // 
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Location = new Point(180, 191);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(220, 31);
-            textBox1.TabIndex = 2;
-            textBox1.Text = "Introduzca el usuario";
-            textBox1.TextAlign = HorizontalAlignment.Center;
+            label6.AutoSize = true;
+            label6.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(248, 348);
+            label6.Name = "label6";
+            label6.Size = new Size(84, 32);
+            label6.TabIndex = 5;
+            label6.Text = "Email";
             // 
             // textBox2
             // 
@@ -183,25 +164,45 @@ namespace PocketGolems
             label5.Text = "Contraseña";
             label5.Click += label5_Click;
             // 
-            // textBox3
+            // textBox1
             // 
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Location = new Point(180, 401);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(220, 31);
-            textBox3.TabIndex = 6;
-            textBox3.Text = "Introduzca su email";
-            textBox3.TextAlign = HorizontalAlignment.Center;
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Location = new Point(180, 191);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(220, 31);
+            textBox1.TabIndex = 2;
+            textBox1.Text = "Introduzca el usuario";
+            textBox1.TextAlign = HorizontalAlignment.Center;
             // 
-            // label6
+            // label4
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(248, 348);
-            label6.Name = "label6";
-            label6.Size = new Size(84, 32);
-            label6.TabIndex = 5;
-            label6.Text = "Email";
+            label4.AutoSize = true;
+            label4.Font = new Font("Cascadia Code", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(234, 138);
+            label4.Name = "label4";
+            label4.Size = new Size(112, 32);
+            label4.TabIndex = 1;
+            label4.Text = "Usuario";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Nirmala UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(12, 15);
+            label2.Name = "label2";
+            label2.Size = new Size(279, 65);
+            label2.TabIndex = 0;
+            label2.Text = "Registrarse";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Nirmala UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(592, 208);
+            label3.Name = "label3";
+            label3.Size = new Size(327, 65);
+            label3.TabIndex = 1;
+            label3.Text = "Iniciar Sesión";
             // 
             // textBox4
             // 
@@ -212,7 +213,7 @@ namespace PocketGolems
             textBox4.TabIndex = 10;
             textBox4.Text = "Introduzca la contraseña";
             textBox4.TextAlign = HorizontalAlignment.Center;
-            textBox4.TextChanged += this.textBox4_TextChanged;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // label7
             // 
@@ -223,7 +224,7 @@ namespace PocketGolems
             label7.Size = new Size(154, 32);
             label7.TabIndex = 9;
             label7.Text = "Contraseña";
-            label7.Click += this.label7_Click;
+            label7.Click += label7_Click;
             // 
             // textBox5
             // 
@@ -234,7 +235,7 @@ namespace PocketGolems
             textBox5.TabIndex = 8;
             textBox5.Text = "Introduzca el usuario";
             textBox5.TextAlign = HorizontalAlignment.Center;
-            textBox5.TextChanged += this.textBox5_TextChanged;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // label8
             // 
@@ -247,12 +248,23 @@ namespace PocketGolems
             label8.Text = "Usuario";
             label8.Click += label8_Click;
             // 
-            // IniciarSessión
+            // button2
+            // 
+            button2.Location = new Point(951, 681);
+            button2.Name = "button2";
+            button2.Size = new Size(159, 39);
+            button2.TabIndex = 7;
+            button2.Text = "Botó provisional";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
+            // IniciarSesión
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(82, 120, 137);
             ClientSize = new Size(1143, 750);
+            Controls.Add(button2);
             Controls.Add(textBox4);
             Controls.Add(label3);
             Controls.Add(label7);
@@ -260,7 +272,8 @@ namespace PocketGolems
             Controls.Add(textBox5);
             Controls.Add(panel1);
             Controls.Add(label8);
-            Name = "IniciarSessión";
+            Name = "IniciarSesión";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "IniciarSessión";
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
@@ -307,5 +320,6 @@ namespace PocketGolems
         private Label label7;
         private TextBox textBox5;
         private Label label8;
+        private Button button2;
     }
 }
