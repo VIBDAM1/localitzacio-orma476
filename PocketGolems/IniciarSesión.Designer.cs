@@ -72,7 +72,6 @@ namespace PocketGolems
             button1.FlatAppearance.BorderColor = Color.White;
             button1.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(button1, "button1");
-            button1.Image = Properties.Resources.golems___copia;
             button1.Name = "button1";
             button1.UseVisualStyleBackColor = true;
             // 

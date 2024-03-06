@@ -65,7 +65,7 @@ namespace PocketGolems
         private void buttonchinese_Click(object sender, EventArgs e)
         {
 
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("zh-Hans");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
             //Recarregar el formulari
             this.Hide();
             IniciarSesión f1 = new IniciarSesión();
