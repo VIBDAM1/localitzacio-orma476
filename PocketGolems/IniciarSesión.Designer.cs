@@ -29,6 +29,7 @@ namespace PocketGolems
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IniciarSesión));
             panel1 = new Panel();
             button1 = new Button();
@@ -36,6 +37,7 @@ namespace PocketGolems
             label1 = new Label();
             pictureBox1 = new PictureBox();
             panel3 = new Panel();
+            button3 = new Button();
             textBox3 = new TextBox();
             label6 = new Label();
             textBox2 = new TextBox();
@@ -52,6 +54,9 @@ namespace PocketGolems
             buttonchinese = new Button();
             buttonmorocco = new Button();
             buttonspanish = new Button();
+            helpProvider1 = new HelpProvider();
+            toolTip1 = new ToolTip(components);
+            printDialog1 = new PrintDialog();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -98,6 +103,7 @@ namespace PocketGolems
             // panel3
             // 
             panel3.BackColor = Color.White;
+            panel3.Controls.Add(button3);
             panel3.Controls.Add(textBox3);
             panel3.Controls.Add(label6);
             panel3.Controls.Add(textBox2);
@@ -107,6 +113,14 @@ namespace PocketGolems
             panel3.Controls.Add(label2);
             resources.ApplyResources(panel3, "panel3");
             panel3.Name = "panel3";
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.Gray;
+            resources.ApplyResources(button3, "button3");
+            button3.Name = "button3";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // textBox3
             // 
@@ -206,6 +220,14 @@ namespace PocketGolems
             buttonspanish.UseVisualStyleBackColor = true;
             buttonspanish.Click += buttonspanish_Click;
             // 
+            // helpProvider1
+            // 
+            resources.ApplyResources(helpProvider1, "helpProvider1");
+            // 
+            // printDialog1
+            // 
+            printDialog1.UseEXDialog = true;
+            // 
             // IniciarSesión
             // 
             resources.ApplyResources(this, "$this");
@@ -223,6 +245,7 @@ namespace PocketGolems
             Controls.Add(panel1);
             Controls.Add(label8);
             Name = "IniciarSesión";
+            Load += IniciarSesión_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -272,5 +295,9 @@ namespace PocketGolems
         private Button buttonchinese;
         private Button buttonmorocco;
         private Button buttonspanish;
+        private HelpProvider helpProvider1;
+        private ToolTip toolTip1;
+        private Button button3;
+        private PrintDialog printDialog1;
     }
 }
